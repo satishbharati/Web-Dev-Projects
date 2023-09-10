@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #2874f0;
+    color: antiquewhite;
+    
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 110px;
+    padding: 0 20px;
+
+}
+nav ul{
+    height: 48px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    font-family: 'Chakra Petch', sans-serif;
+    list-style: none;
+    padding: 0 20px;
+}
+nav ul li :hover{
+    font-weight: bolder;
+}
+nav ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+
+}
+.search{
+    display: flex;
+    align-items: center;
+    padding: 9px 50px;
+}
+.search input{
+    width: 30vw;
+    height: 25px;
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+}
+.btn{
+    background-color: beige;
+    border-radius: 5px;
+    padding: 3px 15px;
+    margin: 0 0 0px 10px;
+    cursor: pointer;
+    border-color: #2874f0;
+    font-family: 'EB Garamond', serif;
+
+}
+.body{
+    font-family: 'EB Garamond', serif;
+    background-color: rgb(216, 233, 233);
+    min-height: calc(100vh - 48px - 10vh);
+}
+.slider{
+    margin: 12px auto;
+    width: 80vw;
+    overflow: hidden;
+}
+.card{
+    margin: 25px auto;
+    width: 90vw;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.carditem{
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 10px 20px;
+
+}
+footer{
+    font-family: 'Genos', sans-serif;
+    background: #2874f0;
+    color: antiquewhite;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.my1{
+    margin: 5px;
+}
+.my2{
+    margin: 20px 0;
+}
+.tex{
+    font-family: 'Signika Negative', sans-serif;
+    text-align: center;
+}
+@media screen and (max-width:1000px) {
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        justify-content: center;
+        margin: 12px 0;
+    }
+
+    nav ul{
+        justify-content: center;
+        height: 45 px;
+    }
+    .search{
+        justify-content: center;
+    }
+    .search input{
+        margin: 12px 16px;    
+    }
+    .topp{
+        width: 300px;
+        height: 200px;
+    }
+}
